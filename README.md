@@ -1,6 +1,6 @@
-SwiftDemo-NSURLConnectin-Delegte
+SwiftDemo-NSURLConnectin-delegte
 ================================
 
 And so on
 
-swift for NSURLConnectin , Delegte,
+swift for NSURLConnectin , delegte,
