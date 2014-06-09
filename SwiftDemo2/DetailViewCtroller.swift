@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 protocol  DetailViewDelegate: NSObjectProtocol{
     func touchesEnded(viewController:DetailViewCtroller! , index: Int);
     func touchesBegan(viewController:DetailViewCtroller! , index: String);
@@ -20,6 +21,7 @@ class DetailViewCtroller: UIViewController ,NSURLConnectionDelegate,NSURLConnect
     var connecton:NSURLConnection!;
     var receivedData:NSMutableData!;
     var imagView:UIImageView!;
+    var testCase:TestCase!
     
     init(delegate:DetailViewDelegate) {
         self.delegate = delegate;
@@ -30,13 +32,22 @@ class DetailViewCtroller: UIViewController ,NSURLConnectionDelegate,NSURLConnect
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor();
         self.title = "DetailViewCtroller";
-
+        self.view.backgroundColor = GlobalConfig.COLOR_RGBA(r: 0,g: 255,b: 232,a: 1);
         var btn = UIButton.buttonWithType(.System) as UIButton;
         btn.frame = CGRectMake(20,80,280,40);
         btn.backgroundColor = UIColor.redColor();
         btn.setTitle("点击下载图片",forState:.Normal);
         btn.addTarget(self,action:"btnPressed:",forControlEvents:.TouchUpInside);
         self.view.addSubview(btn);
+        
+        
+        testCase = TestCase(row:12,col:21);
+        TestCase.printUserInput("zhulei",age:24);
+        
+        var menuView = CustomMenuView(frame: CGRectMake(20,200,280,100),
+            menuType: MENU_VIEW_TYPE.MENU_VIEW_TYPE_DEFAULT);
+        self.view.addSubview(menuView);
+        
     }
     
     override func touchesBegan(touches:NSSet,withEvent:UIEvent){
@@ -64,7 +75,6 @@ class DetailViewCtroller: UIViewController ,NSURLConnectionDelegate,NSURLConnect
     
     func connection(connection: NSURLConnection!, didReceiveResponse response: NSURLResponse!){
         self.receivedData.length = 0;
-        
     }
     
     func connection(connection: NSURLConnection!, didReceiveData data: NSData!){

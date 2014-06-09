@@ -25,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window!.rootViewController = self.navCtrller;
         
+        println(GlobalConfig.SCREEN_WIDTH);
+        println(GlobalConfig.IS_HIGHER_IOS_7);
+        println(GlobalConfig.SCREEN_HEIGHT);
+        println(GlobalConfig.IS_4_INCH_SCREEN);
+
         return true
     }
 
