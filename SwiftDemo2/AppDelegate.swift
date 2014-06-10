@@ -20,11 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
-        self.rootViewCtrller = RootViewController();
+        
+        ConfigData.shareInstance().test = "999";
+
+        
+        self.rootViewCtrller = RootViewController(nibName: nil,bundle: nil);
         self.navCtrller = UINavigationController(rootViewController:self.rootViewCtrller);
-        
+        self.navCtrller!.navigationBarHidden = true;
         self.window!.rootViewController = self.navCtrller;
-        
+      
         println(GlobalConfig.SCREEN_WIDTH);
         println(GlobalConfig.IS_HIGHER_IOS_7);
         println(GlobalConfig.SCREEN_HEIGHT);

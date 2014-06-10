@@ -8,6 +8,33 @@
 
 import UIKit
 
-class SecondLevelViewController: UIViewController {
+class SecondLevelViewController: UIViewController ,CustomNavBarViewDelegate{
+
+    var navBarView:CustomNavBarView?;
+    
+    
+//    init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!)
+//    {
+//        super.init(nibName: nibNameOrNil,bundle: nibBundleOrNil);
+//        
+//    }
+//    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+    func initNavBarView(barType:NAV_BAR_TYPE){
+        navBarView = CustomNavBarView(frame:CGRectMake(0, 0, GlobalConfig.SCREEN_WIDTH, GlobalConfig.NAV_BAR_HEIGHT), type:barType);
+        navBarView!.delegate = self;
+        self.view.addSubview(navBarView);
+    }
+    
+    func back(navBarView:CustomNavBarView)
+    {
+        self.navigationController.popViewControllerAnimated(true);
+    }
 
 }
+

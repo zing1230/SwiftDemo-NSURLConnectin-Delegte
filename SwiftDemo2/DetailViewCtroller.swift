@@ -9,40 +9,39 @@
 import UIKit
 
 
-protocol  DetailViewDelegate: NSObjectProtocol{
-    func touchesEnded(viewController:DetailViewCtroller! , index: Int);
-    func touchesBegan(viewController:DetailViewCtroller! , index: String);
+@objc protocol  DetailViewDelegate: NSObjectProtocol{
+    @optional func touchesEnded(viewController:DetailViewCtroller! , index: Int);
+    @optional func touchesBegan(viewController:DetailViewCtroller! , index: String);
 }
 
-class DetailViewCtroller: UIViewController ,NSURLConnectionDelegate,NSURLConnectionDataDelegate{
+class DetailViewCtroller: SecondLevelViewController ,NSURLConnectionDelegate,NSURLConnectionDataDelegate{
     
-    let delegate:DetailViewDelegate
+    var delegate:DetailViewDelegate?;
     
     var connecton:NSURLConnection!;
     var receivedData:NSMutableData!;
     var imagView:UIImageView!;
-    var testCase:TestCase!
     
-    init(delegate:DetailViewDelegate) {
-        self.delegate = delegate;
-        super.init(nibName: nil, bundle: nil)
+    init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!)
+    {
+        super.init(nibName: nibNameOrNil,bundle: nibBundleOrNil);
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor();
-        self.title = "DetailViewCtroller";
-        self.view.backgroundColor = GlobalConfig.COLOR_RGBA(r: 0,g: 255,b: 232,a: 1);
+        
+        self.initNavBarView(.NAV_BAR_TYPE_SECOND_LEVEL_VIEW);
+        self.navBarView!.setTitle("DetailViewCtroller");
+
+//        self.view.backgroundColor = GlobalConfig.COLOR_RGBA(r: 0,g: 255,b: 232,a: 1);
         var btn = UIButton.buttonWithType(.System) as UIButton;
         btn.frame = CGRectMake(20,80,280,40);
         btn.backgroundColor = UIColor.redColor();
         btn.setTitle("点击下载图片",forState:.Normal);
         btn.addTarget(self,action:"btnPressed:",forControlEvents:.TouchUpInside);
         self.view.addSubview(btn);
-        
-        
-        testCase = TestCase(row:12,col:21);
-        TestCase.printUserInput("zhulei",age:24);
         
         var menuView = CustomMenuView(frame: CGRectMake(20,200,280,100),
             menuType: MENU_VIEW_TYPE.MENU_VIEW_TYPE_DEFAULT);
@@ -51,12 +50,12 @@ class DetailViewCtroller: UIViewController ,NSURLConnectionDelegate,NSURLConnect
     }
     
     override func touchesBegan(touches:NSSet,withEvent:UIEvent){
-        self.delegate.touchesBegan(self,index:"touchesBegan");
+        self.delegate?.touchesBegan!(self,index:"touchesBegan");
     }
     
     override func touchesEnded(touches:NSSet,withEvent:UIEvent){
 
-        self.delegate.touchesEnded(self,index:123);
+        self.delegate?.touchesEnded!(self,index:123);
     }
     
     func btnPressed(sender:UIButton){

@@ -23,6 +23,9 @@ enum GlobalConfig{
         return UIColor(red:red ,green:green ,blue:blue,alpha:alpha);
     }
     
+    static let NAV_BAR_HEIGHT:Float = (IS_HIGHER_IOS_7 ? 60 : 40)
+ 
+    static let TAB_BAR_HEIGHT:Float = 47;
     
 }
 

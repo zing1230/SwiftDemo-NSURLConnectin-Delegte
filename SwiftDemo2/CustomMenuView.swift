@@ -87,12 +87,11 @@ class CustomMenuView: UIView {
         sender.setBackgroundImage(UIImage(named:self.selectedImagesArr[index]),forState:UIControlState.Normal);
         self.lastSelectedBtn.setBackgroundImage(UIImage(named:self.normalImagesArr[lastIndex]),forState:UIControlState.Normal);
         
-        var b:Bool! = self.delegate?.respondsToSelector("menuSelected!(menuView:,atIndex:,lastSelectedIndex:)");
+        var b:Bool! = self.delegate?.respondsToSelector("menuSelected?(_,_,_)");
         
-        if(self.delegate? != nil && b){
-            self.delegate?.menuSelected!(self,atIndex: index,lastSelectedIndex: lastIndex);
-        }
-        
+        //?放在某个 optional 的 protocol 方法的括号前面，以表示询问是否可以对该方法调用
+        self.delegate?.menuSelected?(self,atIndex: index,lastSelectedIndex: lastIndex);
+
         
         self.completionHandler(self,index,lastIndex);
         

@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65BB791319459C9900C2B6D6 /* CustomCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB791219459C9900C2B6D6 /* CustomCheckView.swift */; };
+		65BB791619459DC000C2B6D6 /* check_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BB791419459DC000C2B6D6 /* check_on.png */; };
+		65BB791719459DC000C2B6D6 /* check_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BB791519459DC000C2B6D6 /* check_off.png */; };
+		65BB79191945A36A00C2B6D6 /* ConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79181945A36A00C2B6D6 /* ConfigData.swift */; };
+		65BB791B1945B0B700C2B6D6 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB791A1945B0B700C2B6D6 /* CustomNavBarView.swift */; };
+		65BB791D1945B50300C2B6D6 /* image_back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BB791C1945B50300C2B6D6 /* image_back_icon.png */; };
+		65BB794D1945BF8A00C2B6D6 /* BridgeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BB794C1945BF8A00C2B6D6 /* BridgeTools.m */; };
+		65BB794F1946B76D00C2B6D6 /* NSString+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB794E1946B76D00C2B6D6 /* NSString+extention.swift */; };
+		65BB79511946D10900C2B6D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79501946D10900C2B6D6 /* HomeViewController.swift */; };
+		65BB79531946D12F00C2B6D6 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79521946D12F00C2B6D6 /* ProductViewController.swift */; };
+		65BB79551946D13B00C2B6D6 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79541946D13B00C2B6D6 /* CustomizeViewController.swift */; };
+		65BB79571946D14600C2B6D6 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79561946D14600C2B6D6 /* AssetViewController.swift */; };
 		65C7857E19456BE70027C591 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7857D19456BE70027C591 /* CustomTableViewCell.m */; };
-		65C7858119456F5A0027C591 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7858019456F5A0027C591 /* CustomView.m */; };
 		65CED9E21941AB3F00E51488 /* menu_icon_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CED9DA1941AB3F00E51488 /* menu_icon_1_1.png */; };
 		65CED9E31941AB3F00E51488 /* menu_icon_1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CED9DB1941AB3F00E51488 /* menu_icon_1_2.png */; };
 		65CED9E41941AB3F00E51488 /* menu_icon_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CED9DC1941AB3F00E51488 /* menu_icon_2_1.png */; };
@@ -20,7 +31,6 @@
 		65CED9EB1941BB8100E51488 /* SecondLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CED9EA1941BB8100E51488 /* SecondLevelViewController.swift */; };
 		65E32D74193FFDFF00A87AB4 /* DetailViewCtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E32D73193FFDFF00A87AB4 /* DetailViewCtroller.swift */; };
 		65E32D761940079E00A87AB4 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E32D751940079E00A87AB4 /* GlobalConfig.swift */; };
-		65E32D7919401C9A00A87AB4 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E32D7819401C9A00A87AB4 /* TestCase.swift */; };
 		65E32D7B19401DAD00A87AB4 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E32D7A19401DAD00A87AB4 /* CustomMenuView.swift */; };
 		65F5206D193EF2EE000DC320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5206C193EF2EE000DC320 /* AppDelegate.swift */; };
 		65F5206F193EF2EE000DC320 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F5206E193EF2EE000DC320 /* Images.xcassets */; };
@@ -39,11 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65BB791219459C9900C2B6D6 /* CustomCheckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCheckView.swift; sourceTree = "<group>"; };
+		65BB791419459DC000C2B6D6 /* check_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_on.png; sourceTree = "<group>"; };
+		65BB791519459DC000C2B6D6 /* check_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_off.png; sourceTree = "<group>"; };
+		65BB79181945A36A00C2B6D6 /* ConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigData.swift; sourceTree = "<group>"; };
+		65BB791A1945B0B700C2B6D6 /* CustomNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
+		65BB791C1945B50300C2B6D6 /* image_back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_back_icon.png; sourceTree = "<group>"; };
+		65BB794B1945BF8A00C2B6D6 /* BridgeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeTools.h; sourceTree = "<group>"; };
+		65BB794C1945BF8A00C2B6D6 /* BridgeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeTools.m; sourceTree = "<group>"; };
+		65BB794E1946B76D00C2B6D6 /* NSString+extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+extention.swift"; sourceTree = "<group>"; };
+		65BB79501946D10900C2B6D6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		65BB79521946D12F00C2B6D6 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		65BB79541946D13B00C2B6D6 /* CustomizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
+		65BB79561946D14600C2B6D6 /* AssetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		65C7857B19456BE70027C591 /* SwiftDemo2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo2-Bridging-Header.h"; sourceTree = "<group>"; };
 		65C7857C19456BE70027C591 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		65C7857D19456BE70027C591 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		65C7857F19456F5A0027C591 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
-		65C7858019456F5A0027C591 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		65CED9DA1941AB3F00E51488 /* menu_icon_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon_1_1.png; sourceTree = "<group>"; };
 		65CED9DB1941AB3F00E51488 /* menu_icon_1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon_1_2.png; sourceTree = "<group>"; };
 		65CED9DC1941AB3F00E51488 /* menu_icon_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon_2_1.png; sourceTree = "<group>"; };
@@ -55,7 +76,6 @@
 		65CED9EA1941BB8100E51488 /* SecondLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondLevelViewController.swift; sourceTree = "<group>"; };
 		65E32D73193FFDFF00A87AB4 /* DetailViewCtroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewCtroller.swift; sourceTree = "<group>"; };
 		65E32D751940079E00A87AB4 /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
-		65E32D7819401C9A00A87AB4 /* TestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		65E32D7A19401DAD00A87AB4 /* CustomMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
 		65E32D7C1940377900A87AB4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		65F52067193EF2EE000DC320 /* SwiftDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +106,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65BB79351945BDAD00C2B6D6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		65CED9D81941AB3900E51488 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +124,9 @@
 		65CED9D91941AB3900E51488 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				65BB791C1945B50300C2B6D6 /* image_back_icon.png */,
+				65BB791419459DC000C2B6D6 /* check_on.png */,
+				65BB791519459DC000C2B6D6 /* check_off.png */,
 				65CED9DA1941AB3F00E51488 /* menu_icon_1_1.png */,
 				65CED9DB1941AB3F00E51488 /* menu_icon_1_2.png */,
 				65CED9DC1941AB3F00E51488 /* menu_icon_2_1.png */,
@@ -130,18 +160,26 @@
 		65F52069193EF2EE000DC320 /* SwiftDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				65BB79351945BDAD00C2B6D6 /* Category */,
 				65F5206C193EF2EE000DC320 /* AppDelegate.swift */,
 				65F52086193EF340000DC320 /* RootViewController.swift */,
+				65BB79501946D10900C2B6D6 /* HomeViewController.swift */,
+				65BB79521946D12F00C2B6D6 /* ProductViewController.swift */,
+				65BB79541946D13B00C2B6D6 /* CustomizeViewController.swift */,
+				65BB79561946D14600C2B6D6 /* AssetViewController.swift */,
 				65E32D73193FFDFF00A87AB4 /* DetailViewCtroller.swift */,
 				65C7857C19456BE70027C591 /* CustomTableViewCell.h */,
 				65C7857D19456BE70027C591 /* CustomTableViewCell.m */,
-				65C7857F19456F5A0027C591 /* CustomView.h */,
-				65C7858019456F5A0027C591 /* CustomView.m */,
-				65E32D7819401C9A00A87AB4 /* TestCase.swift */,
 				65CED9EA1941BB8100E51488 /* SecondLevelViewController.swift */,
 				65E32D7A19401DAD00A87AB4 /* CustomMenuView.swift */,
+				65BB791219459C9900C2B6D6 /* CustomCheckView.swift */,
+				65BB791A1945B0B700C2B6D6 /* CustomNavBarView.swift */,
+				65BB79181945A36A00C2B6D6 /* ConfigData.swift */,
 				65E32D7C1940377900A87AB4 /* MyPlayground.playground */,
 				65E32D751940079E00A87AB4 /* GlobalConfig.swift */,
+				65BB794E1946B76D00C2B6D6 /* NSString+extention.swift */,
+				65BB794B1945BF8A00C2B6D6 /* BridgeTools.h */,
+				65BB794C1945BF8A00C2B6D6 /* BridgeTools.m */,
 				65F5206E193EF2EE000DC320 /* Images.xcassets */,
 				65F5206A193EF2EE000DC320 /* Supporting Files */,
 				65C7857B19456BE70027C591 /* SwiftDemo2-Bridging-Header.h */,
@@ -255,12 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F5206F193EF2EE000DC320 /* Images.xcassets in Resources */,
+				65BB791D1945B50300C2B6D6 /* image_back_icon.png in Resources */,
 				65CED9E71941AB3F00E51488 /* menu_icon_3_2.png in Resources */,
 				65CED9E61941AB3F00E51488 /* menu_icon_3_1.png in Resources */,
 				65CED9E31941AB3F00E51488 /* menu_icon_1_2.png in Resources */,
 				65CED9E91941AB3F00E51488 /* menu_icon_4_2.png in Resources */,
+				65BB791619459DC000C2B6D6 /* check_on.png in Resources */,
 				65CED9E81941AB3F00E51488 /* menu_icon_4_1.png in Resources */,
 				65CED9E41941AB3F00E51488 /* menu_icon_2_1.png in Resources */,
+				65BB791719459DC000C2B6D6 /* check_off.png in Resources */,
 				65CED9E51941AB3F00E51488 /* menu_icon_2_2.png in Resources */,
 				65CED9E21941AB3F00E51488 /* menu_icon_1_1.png in Resources */,
 			);
@@ -282,13 +323,20 @@
 			files = (
 				65E32D761940079E00A87AB4 /* GlobalConfig.swift in Sources */,
 				65CED9EB1941BB8100E51488 /* SecondLevelViewController.swift in Sources */,
+				65BB794F1946B76D00C2B6D6 /* NSString+extention.swift in Sources */,
+				65BB791319459C9900C2B6D6 /* CustomCheckView.swift in Sources */,
+				65BB79571946D14600C2B6D6 /* AssetViewController.swift in Sources */,
+				65BB794D1945BF8A00C2B6D6 /* BridgeTools.m in Sources */,
+				65BB79531946D12F00C2B6D6 /* ProductViewController.swift in Sources */,
+				65BB79511946D10900C2B6D6 /* HomeViewController.swift in Sources */,
 				65E32D74193FFDFF00A87AB4 /* DetailViewCtroller.swift in Sources */,
 				65E32D7B19401DAD00A87AB4 /* CustomMenuView.swift in Sources */,
 				65F52087193EF340000DC320 /* RootViewController.swift in Sources */,
-				65C7858119456F5A0027C591 /* CustomView.m in Sources */,
-				65E32D7919401C9A00A87AB4 /* TestCase.swift in Sources */,
+				65BB79191945A36A00C2B6D6 /* ConfigData.swift in Sources */,
+				65BB791B1945B0B700C2B6D6 /* CustomNavBarView.swift in Sources */,
 				65C7857E19456BE70027C591 /* CustomTableViewCell.m in Sources */,
 				65F5206D193EF2EE000DC320 /* AppDelegate.swift in Sources */,
+				65BB79551946D13B00C2B6D6 /* CustomizeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +446,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = SwiftDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo2/SwiftDemo2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -413,9 +463,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = SwiftDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo2/SwiftDemo2-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
