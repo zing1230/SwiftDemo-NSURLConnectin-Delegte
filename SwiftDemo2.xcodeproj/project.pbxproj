@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65626E9E194826AB0041149A /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65626E9D194826AB0041149A /* UIImageExt.swift */; };
 		65BB791319459C9900C2B6D6 /* CustomCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB791219459C9900C2B6D6 /* CustomCheckView.swift */; };
 		65BB791619459DC000C2B6D6 /* check_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BB791419459DC000C2B6D6 /* check_on.png */; };
 		65BB791719459DC000C2B6D6 /* check_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BB791519459DC000C2B6D6 /* check_off.png */; };
@@ -14,7 +15,7 @@
 		65BB791B1945B0B700C2B6D6 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB791A1945B0B700C2B6D6 /* CustomNavBarView.swift */; };
 		65BB791D1945B50300C2B6D6 /* image_back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BB791C1945B50300C2B6D6 /* image_back_icon.png */; };
 		65BB794D1945BF8A00C2B6D6 /* BridgeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BB794C1945BF8A00C2B6D6 /* BridgeTools.m */; };
-		65BB794F1946B76D00C2B6D6 /* NSString+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB794E1946B76D00C2B6D6 /* NSString+extention.swift */; };
+		65BB794F1946B76D00C2B6D6 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB794E1946B76D00C2B6D6 /* StringExt.swift */; };
 		65BB79511946D10900C2B6D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79501946D10900C2B6D6 /* HomeViewController.swift */; };
 		65BB79531946D12F00C2B6D6 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79521946D12F00C2B6D6 /* ProductViewController.swift */; };
 		65BB79551946D13B00C2B6D6 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB79541946D13B00C2B6D6 /* CustomizeViewController.swift */; };
@@ -49,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65626E9C194808F90041149A /* MyPlayground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground2.playground; sourceTree = "<group>"; };
+		65626E9D194826AB0041149A /* UIImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		65BB791219459C9900C2B6D6 /* CustomCheckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCheckView.swift; sourceTree = "<group>"; };
 		65BB791419459DC000C2B6D6 /* check_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_on.png; sourceTree = "<group>"; };
 		65BB791519459DC000C2B6D6 /* check_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_off.png; sourceTree = "<group>"; };
@@ -57,7 +60,7 @@
 		65BB791C1945B50300C2B6D6 /* image_back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_back_icon.png; sourceTree = "<group>"; };
 		65BB794B1945BF8A00C2B6D6 /* BridgeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeTools.h; sourceTree = "<group>"; };
 		65BB794C1945BF8A00C2B6D6 /* BridgeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeTools.m; sourceTree = "<group>"; };
-		65BB794E1946B76D00C2B6D6 /* NSString+extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+extention.swift"; sourceTree = "<group>"; };
+		65BB794E1946B76D00C2B6D6 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExt.swift; path = ../StringExt.swift; sourceTree = "<group>"; };
 		65BB79501946D10900C2B6D6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		65BB79521946D12F00C2B6D6 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		65BB79541946D13B00C2B6D6 /* CustomizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
@@ -106,11 +109,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65BB79351945BDAD00C2B6D6 /* Category */ = {
+		65626E99194803070041149A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				65BB794E1946B76D00C2B6D6 /* StringExt.swift */,
+				65626E9D194826AB0041149A /* UIImageExt.swift */,
 			);
-			path = Category;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		65CED9D81941AB3900E51488 /* Resource */ = {
@@ -160,7 +165,7 @@
 		65F52069193EF2EE000DC320 /* SwiftDemo2 */ = {
 			isa = PBXGroup;
 			children = (
-				65BB79351945BDAD00C2B6D6 /* Category */,
+				65626E99194803070041149A /* Extensions */,
 				65F5206C193EF2EE000DC320 /* AppDelegate.swift */,
 				65F52086193EF340000DC320 /* RootViewController.swift */,
 				65BB79501946D10900C2B6D6 /* HomeViewController.swift */,
@@ -176,8 +181,8 @@
 				65BB791A1945B0B700C2B6D6 /* CustomNavBarView.swift */,
 				65BB79181945A36A00C2B6D6 /* ConfigData.swift */,
 				65E32D7C1940377900A87AB4 /* MyPlayground.playground */,
+				65626E9C194808F90041149A /* MyPlayground2.playground */,
 				65E32D751940079E00A87AB4 /* GlobalConfig.swift */,
-				65BB794E1946B76D00C2B6D6 /* NSString+extention.swift */,
 				65BB794B1945BF8A00C2B6D6 /* BridgeTools.h */,
 				65BB794C1945BF8A00C2B6D6 /* BridgeTools.m */,
 				65F5206E193EF2EE000DC320 /* Images.xcassets */,
@@ -323,7 +328,7 @@
 			files = (
 				65E32D761940079E00A87AB4 /* GlobalConfig.swift in Sources */,
 				65CED9EB1941BB8100E51488 /* SecondLevelViewController.swift in Sources */,
-				65BB794F1946B76D00C2B6D6 /* NSString+extention.swift in Sources */,
+				65BB794F1946B76D00C2B6D6 /* StringExt.swift in Sources */,
 				65BB791319459C9900C2B6D6 /* CustomCheckView.swift in Sources */,
 				65BB79571946D14600C2B6D6 /* AssetViewController.swift in Sources */,
 				65BB794D1945BF8A00C2B6D6 /* BridgeTools.m in Sources */,
@@ -334,6 +339,7 @@
 				65F52087193EF340000DC320 /* RootViewController.swift in Sources */,
 				65BB79191945A36A00C2B6D6 /* ConfigData.swift in Sources */,
 				65BB791B1945B0B700C2B6D6 /* CustomNavBarView.swift in Sources */,
+				65626E9E194826AB0041149A /* UIImageExt.swift in Sources */,
 				65C7857E19456BE70027C591 /* CustomTableViewCell.m in Sources */,
 				65F5206D193EF2EE000DC320 /* AppDelegate.swift in Sources */,
 				65BB79551946D13B00C2B6D6 /* CustomizeViewController.swift in Sources */,

@@ -21,6 +21,4 @@ class ConfigData {
         })
         return statics.instance;
     }
-    
-    
 }

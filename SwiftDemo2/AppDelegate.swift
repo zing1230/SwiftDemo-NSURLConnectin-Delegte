@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         ConfigData.shareInstance().test = "999";
 
-        
         self.rootViewCtrller = RootViewController(nibName: nil,bundle: nil);
         self.navCtrller = UINavigationController(rootViewController:self.rootViewCtrller);
         self.navCtrller!.navigationBarHidden = true;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>44C9FC1A-2A43-437A-AB8F-05E14A2B5EDC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftDemo2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>97791711-D8A2-4EDC-A392-E40B7A64105C</key>
+		<string>https://github.com/zing1230/SwiftDemo-NSURLConnectin-Delegte.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftDemo2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>97791711-D8A2-4EDC-A392-E40B7A64105C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zing1230/SwiftDemo-NSURLConnectin-Delegte.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>97791711-D8A2-4EDC-A392-E40B7A64105C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97791711-D8A2-4EDC-A392-E40B7A64105C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftDemo2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

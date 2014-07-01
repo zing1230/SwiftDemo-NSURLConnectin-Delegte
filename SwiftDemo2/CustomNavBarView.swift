@@ -61,7 +61,10 @@ class CustomNavBarView: UIView {
     func setTitle(title:String){
         
         //调用OC的函数
-        var size = BridgeTools.getSizeOfString(UIFont.boldSystemFontOfSize(21),constroSize:CGSizeMake(CGRectGetWidth(self.frame) - 100, 45),string:title as NSString);
+//        var size = BridgeTools.getSizeOfString(UIFont.boldSystemFontOfSize(21),constroSize:CGSizeMake(CGRectGetWidth(self.frame) - 100, 45),string:title as NSString);
+        
+//        getSizeOfString(font:UIFont,size:CGSize) ->CGSize
+        var size = title.getSizeOfString(UIFont.boldSystemFontOfSize(21),size: CGSizeMake(CGRectGetWidth(self.frame) - 100, 45));
         
         var frame:CGRect!;
         

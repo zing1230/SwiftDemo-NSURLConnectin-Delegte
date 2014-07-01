@@ -18,6 +18,8 @@ class HomeViewController: SecondLevelViewController ,UITableViewDelegate , UITab
         self.navBarView!.setTitle("首页");
         self.view.backgroundColor = UIColor.greenColor();
         self.initTableView();
+        
+    
 
     }
     
